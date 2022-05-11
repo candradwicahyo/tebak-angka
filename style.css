@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --font: 'Roboto';
+  --gray: #f4f7fe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.mt-1 { margin-top: 10px; }
+
+.italic { font-style: italic; }
+
+.container {
+  position: relative;
+  width: 70%;
+  margin: 30px auto;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  padding: 40px;
+  background: var(--gray);
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
+
+.header p {
+  line-height: 23px;
+  font-size: 14px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group .input {
+  background: var(--gray);
+  width: 245px;
+  margin-right: 5px;
+} 
+
+.form-group .input,
+.form-group .button {
+  position: relative;
+  height: 50px;
+  padding: 0 20px;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.form-group .button {
+  cursor: pointer;
+  background: royalblue;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+}
+
+.form-group .button i {
+  margin-left: 3px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
